@@ -1,0 +1,16 @@
+title: 0384143570
+description: 'https://www.classy.org/campaign/c313412'
+template:
+  repo: 0384143570-template
+  name: 0384143570
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
